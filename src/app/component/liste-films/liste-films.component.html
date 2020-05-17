@@ -1,0 +1,19 @@
+<div class="col-md-12 text-center">
+
+  <h2 class="h2 text-center"> Voici la page de la liste des films </h2>
+  <hr>
+
+  <p class="lead"> Cette page liste tous les films disponibles sur le site. <br>
+    Les films sont tirés d’un service 'MoviesListService' qui renvoie dans ce cas la liste complète de films. <br>
+    Sur cette page seul le titre du film est affiché. <br>
+    Un clic sur le titre renvoie vers la page “Détail d’un film” portant sur ce film en particulier <br>
+    (en transmettant l’id du film en paramètre).</p>
+
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let film of MoviesList; let idx=index">
+      <a routerLink="/detail-un-film/{{idx}}">{{film.title}} </a>
+    </li>
+  </ul>
+
+</div>
+

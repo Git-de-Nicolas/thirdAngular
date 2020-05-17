@@ -1,0 +1,19 @@
+
+
+<!--
+Un clic sur le logo renvoie à la page d’accueil.
+-->
+
+<header class="bg-secondary text-white">
+  <div class="container text-center">
+    <h1 (mouseenter)="testlaclasse=false"
+        (mouseleave)="testlaclasse=true"> {{titre | uppercase}} </h1>
+    <h2 [class.hidden]="testlaclasse"> Slogan : {{slogan}}</h2> <!-- is visible = true if mouseenter 'titre' -->
+  </div>
+</header>
+
+
+
+
+
+<!--<h1 (mouseenter)="showmyclass=true">-->
